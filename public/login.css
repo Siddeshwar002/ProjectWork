@@ -1,7 +1,7 @@
 /********LOG-In***************************/
 
 .login-block{ 
-padding : 80px 100px 80px 100px ;
+padding : 60px 100px 60px 100px ;
    font-family: 'Montserrat',
    sans-serif;
 } 
@@ -151,7 +151,7 @@ padding : 80px 100px 80px 100px ;
 .conStyle{
     font-family: 'Nunito',sans-serif;
     font-weight: bold;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 /*content title*/

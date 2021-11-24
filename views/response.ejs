@@ -17,10 +17,11 @@
 <!--Content -->
 
    <div class="container CNpos CNstyle offset-md-1" >
-        <p style="font-size: 18px;">Hey,<span id="FLname" > <%=Fname%> <%=Lname%></span> you have successfully registerd for the event.
+        <p style="font-size: 18px;">Hey,<span id="FLname" > <%=Data_Regis_Student[0].fname%> <%=Data_Regis_Student[0].lname%></span> you have successfully registerd for the event.
 		The user detiails submited in the form is recorded. You will be soon reciving notifications regarding the event from the co-ordinator,
-		 an response mail also has been sent to the registerd mail id. For further queries contact event co-ordinator.</p>
-		 <p style="font-size: 18px;">The details enterd in the form is shown below, and the same will be registerd.</p>
+		 an response mail also has been sent to the registerd mail id. For further queries contact event co-ordinator. Best of LUCK!</p>
+
+		 <p style="font-size: 18px;">The entire detils is displayed below, if any queries then you can reach us through mail, BMSCE ARENA is always at your service!</p>
     </div>
 
 
@@ -34,37 +35,75 @@
 <table>
 
   <tr>
-    <th class="">FIRST NAME</th>
-    <td class=""><%=Fname%></td>
+    <th class="">STUDENT NAME</th>
+    <td class=""><%=Data_Regis_Student[0].fname%> <%=Data_Regis_Student[0].lname%></td>
   </tr>
 
   <tr>
-    <th class="">LAST NAME</th>
-    <td class=""><%=Lname%></td>
+    <th class="">USN</th>
+    <td class=""><%=Data_Regis_Student[0].usn%></td>
   </tr>
 
   <tr>
     <th class="">E-MAIL ID</th>
-    <td class=""><%=Mail%></td>
-  </tr>
-
-    <tr>
-    <th class="">YEAR</th>
-    <td class=""><%=Year%></td>
-  </tr>
-
-    <tr>
-    <th class="">USN</th>
-    <td class=""><%=Usn%></td>
+    <td class=""><%=Data_Regis_Student[0].email%></td>
   </tr>
 
     <tr>
     <th class="">BRANCH</th>
-    <td class=""><%=Branch%></td>
-  </tr>  
+    <td class=""><%=Data_Regis_Student[0].branch%></td>
+  </tr>
+
+    <tr>
+    <th class="">YEAR</th>
+    <td class=""><%=Data_Regis_Student[0].yr%></td>
+  </tr>
+
+    <tr>
+    <th class="">CONTACT NO</th>
+    <td class=""><%=Data_Regis_Student[0].mobno%></td>
+  </tr> 
+
+    </table>
+</div>
 
 
+  <div class="container  TApos2">
+
+<table>
+
+   <tr>
+    <th class="">EVENT ID</th>
+    <td class=""><%=Data_Regis_Event[0].event_id%></td>
+  </tr>
+
+  <tr>
+    <th class="">EVENT NAME</th>
+    <td class=""><%=Data_Regis_Event[0].event_name%></td>
+  </tr>
+
+  <tr>
+    <th class="">EVENT DESCRIPTION</th>
+    <td class=""><%=Data_Regis_Event[0].event_desc%></td>
+  </tr>
+
+  <tr>
+    <th class="">EVENT DATE</th>
+    <td class=""><%=Data_Regis_Event_Date[0].event_start.substring(8,10)%></td>
+  </tr>
+
+    <tr>
+    <th class="">REGISTRATION START</th>
+    <td class=""><%=Data_Regis_Event_Date[0].reg_start.substring(8,10)%></td>
+  </tr>
+
+    <tr>
+    <th class="">REGISTRATION END</th>
+    <td class=""><%=Data_Regis_Event_Date[0].reg_due.substring(8,10)%></td>
+  </tr>
+  
   </table>
+
 
 
 </div>

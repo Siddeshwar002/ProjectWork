@@ -21,6 +21,7 @@
 
 
 
+
 <!--****************************CARD SECTION************************************-->
     <div class="MCpos fluid-container">
         <div class="row">
@@ -36,89 +37,17 @@
                     <div class="Cpos">
                         <div class="card-header1">
                         <!-- <a></a>  ==>this behaves as a GET request  -->
-                            <a  href="/registration/<%=Events_array[i].event_id%>">     
+                        <!-- <a  href="registration/<Events_array[i].event_id%>">  -->
+                        
+                            <a href="registrations/<%=Events_array[i].event_id%>/regis" >     
                                 <h3><b><%=Events_array[i].event_name%></b></h3>
-                                <span class="date"><%=Events_array[i].reg_due.substring(8,10)%></span> 
+                                <span class="date"><%=Events_array[i].reg_due.substring(8,10)%>-<%=Events_array[i].reg_due.substring(5,7)%>-<%=Events_array[i].reg_due.substring(0,4)%></span> 
                                 <p class="Secline"><%=Events_array[i].event_desc%></p>
                             </a>
                         </div>
                       </div>
 
                       <%}%>
-  
-
-
-
-
-
-
-<!--
-                      <div class="Cpos">
-                        <div class="card-header1">
-                            <a  href="" >
-                                <h3><b>Official basketball team selection for 3st year B.E </b></h3>
-                                <span class="date">DEC &nbsp;02</span>
-                                <p class="Secline">Inter-college cricket event is being scheduled. So gyus wake up and register for the selection.</p>
-                            </a>
-                        </div>
-                      </div>
-
-
-                      <div class="Cpos">
-                        <div class="card-header1">
-                            <a  href="" >
-                                <h3><b>Chess inter-state competation, selection for 2st year B.E</b></h3>
-                                <span class="date">NOV &nbsp;15</span>
-                                <p class="Secline">Inter-State chess event is being scheduled. So gyus wake up and register for the selection.</p>
-                            </a>
-                        </div>
-                      </div>
-
-
-                      <div class="Cpos">
-                        <div class="card-header1">
-                            <a  href="" >
-                                <h3><b>Kreedosthava, Girls throwball selection for 2st year B.E</b></h3>
-                                <span class="date">NOV &nbsp;02</span>
-                                <p class="Secline">Kreedothsave event is being scheduled. So gyus wake up and register for the selection.</p>
-                            </a>
-                        </div>
-                      </div>
-
-
-                      <div class="Cpos">
-                        <div class="card-header1">
-                            <a  href="" >
-                                <h3><b>Badminton inter-state competation, selection for 2st year B.E</b></h3>
-                                <span class="date">OCT &nbsp;19</span>
-                                <p class="Secline">Inter-State Badminton event is being hosted for both boys and girls, so gyus wake up and register for the selection.</p>
-                            </a>
-                        </div>
-                      </div>
-
-
-                    <div class="Cpos">
-                        <div class="card-header1">
-                            <a  href="">     
-                                <h3><b>Official cricket team selection for 3rd year B.E </b></h3>
-                                <span class="date">SEPT &nbsp;22</span> 
-                                <p class="Secline">Inter-college cricket event is being scheduled. So gyus wake up and register for the selection.</p>
-                            </a>
-                        </div>
-                      </div>
-
-
-                    <div class="CLpos">
-                        <div class="card-header1">
-                            <a  href="" >
-                                <h3><b>Wrestling inter-state competation, selection for 2st year B.E</b></h3>
-                                <span class="date">SEPT &nbsp;15</span>
-                                <p class="Secline">Inter-college wrestling event is being scheduled. So gyus wake up and register for the selection.</p>
-                            </a>
-                        </div>
-                      </div>
-
-                      -->
                       
 
             </div>

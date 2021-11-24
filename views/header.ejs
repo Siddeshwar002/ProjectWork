@@ -99,16 +99,13 @@
 
 
                   <!--list items -->
-                  <div class="row ">
+                  <div class="row">
                   <div id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  
-                    <a id="dropdown-item" class="dropdown-item" href="#">Official BMSCE cricket team seletion on 19th dec</a>
-                    <a id="dropdown-item" class="dropdown-item" href="#">Chess Inter-college Tournment from 17th dec</a>
-                    <a id="dropdown-item" class="dropdown-item" href="#">Kreedothsava event meet on 16th dec at 7pm </a>
-                    <a id="dropdown-item" class="dropdown-item" href="#">Basketball team selection for Inter-State</a>
-                    <a id="dropdown-item" class="dropdown-item" href="#">Throwball final match tommorow at 4pm</a>
-                    <a id="dropdown-item" class="dropdown-item" href="#">Sports meet at sports complex today at 4pm </a>
-                    <a id="dropdown-item" class="dropdown-item" href="#">Yoga session with Mr.Yoga Master at 6am</a>
+
+                  <%for(a=Data_AllNotify.length-1 ; a>=0 ; a--){%>
+                  <!-- span can be changed into <a></a> also change the css too-->
+                    <span id="dropdown-item" class="dropdown-item" href="#"><%=Data_AllNotify[a].info%></span>
+                  <% } %>
 
                   </div>
                 </div>

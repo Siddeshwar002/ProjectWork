@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Autofocus Field</title>
+    
+<link rel="stylesheet" href="/OTP.css"> <!--CSS new-->
+
+</head>
+<body>
+	<div class="container">
+		<h1>ENTER OTP</h1>
+		<form action="/OTP" method="post" >
+
+        <div class="userInput">
+			<input type="text" name="no_1" id='ist' maxlength="1" onkeyup="clickEvent(this,'sec')">
+			<input type="text" name="no_2" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">
+			<input type="text" name="no_3" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')">
+			<input type="text" name="no_4" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fifth')">
+			<input type="text" name="no_5" id="fifth" maxlength="1">
+            <input type="text" class="InputHolder" name="DateHolder" value=<%=Next_OTP_data.S_Usn%> >
+            <p></p>
+		</div>
+		<button>CONFIRM</button>
+
+        </form>
+	</div>
+</body>
+</html>

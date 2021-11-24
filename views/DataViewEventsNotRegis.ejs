@@ -39,12 +39,18 @@
 
  <% for (var q = 0 ; q < Data_EventsClosed.length ; q++) { %>
   <tr>
-    <td class=""><%=Data_EventsClosed[q].event_id%></td>
-    <td class=""><%=Data_EventsClosed[q].event_name%></td>
-    <td class=""><%=Data_EventsClosed[q].event_desc%></td>
-    <td class=""><%=Data_EventsClosed[q].reg_start.substring(8,10)%></td>
-    <td class=""><%=Data_EventsClosed[q].reg_due.substring(8,10)%></td>
-    <td class=""><%=Data_EventsClosed[q].event_start.substring(8,10)%></td>
+    <td class=""><a href="DataViewEventsNotRegis/<%=Data_EventsClosed[q].event_id%>/Sdata" ><%=Data_EventsClosed[q].event_id%></a></td>
+    <td class=""><a href="DataViewEventsNotRegis/<%=Data_EventsClosed[q].event_id%>/Sdata" ><%=Data_EventsClosed[q].event_name%></a></td>
+    <td class=""><a href="DataViewEventsNotRegis/<%=Data_EventsClosed[q].event_id%>/Sdata" ><%=Data_EventsClosed[q].event_desc%></a></td>
+    <td class=""><a href="DataViewEventsNotRegis/<%=Data_EventsClosed[q].event_id%>/Sdata" ><%=Data_EventsClosed[q].reg_start.substring(8,10)%>-<%=Data_EventsClosed[q].reg_start.substring(5,7)%>-<%=Data_EventsClosed[q].reg_start.substring(0,4)%></a></td>
+    <td class=""><a href="DataViewEventsNotRegis/<%=Data_EventsClosed[q].event_id%>/Sdata" ><%=Data_EventsClosed[q].reg_due.substring(8,10)%>-<%=Data_EventsClosed[q].reg_due.substring(5,7)%>-<%=Data_EventsClosed[q].reg_due.substring(0,4)%></a></td>
+    <td class=""><a href="DataViewEventsNotRegis/<%=Data_EventsClosed[q].event_id%>/Sdata" ><%=Data_EventsClosed[q].event_start.substring(8,10)%>-<%=Data_EventsClosed[q].event_start.substring(5,7)%>-<%=Data_EventsClosed[q].event_start.substring(0,4)%></a></td>
+
+
+
+
+
+    
   </tr>
 
   <% } %>

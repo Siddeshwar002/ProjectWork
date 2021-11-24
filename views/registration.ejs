@@ -2,6 +2,7 @@
 
 
 <link rel="stylesheet" href="/regis.css"> <!--CSS new-->
+
  <!--REGISTRATION-->
 
 
@@ -14,45 +15,113 @@
   <div class="container CNpos CNstyle offset-md-1" >
         <p style="font-size: 18px;">It takes relentless hard work, years of undivided attention and a lot of perseverance chasing the dream to one day appear in your country’s colors. What separates the legends from thousands of extremely talented youngsters sweating it out every single day on the field, is their attitude towards the game. ~Anonymous</p>
 <p  style="font-size: 18px;" >BMSCE family wishes you good luck for the event and future endeavors to come!</p>
+
+<p  style="font-size: 18px;" >All the Details regarding the event event_name has been displayed below, kindly go through! </p>
+
     </div>
 
+<p class="Errtxt"><%=RegErrTxt%></p>
+
+
+
+
+
+
+
+
+<!-- Table information -->
+
+<div class="container  TApos">
+
+<table>
+
+ <tr>
+    <th class="">EVENT ID</th>
+    <td class=""><%=Data_Eve_Reg[0].event_id%></td>
+  </tr>
+
+  <tr>
+    <th class="">EVENT NAME</th>
+    <td class=""><%=Data_Eve_Reg[0].event_name%></td>
+  </tr>
+
+  <tr>
+    <th class="">EVENT DESCRIPTION</th>
+    <td class=""><%=Data_Eve_Reg[0].event_desc%></td>
+  </tr>
+
+  <tr>
+    <th class="">EVENT DATE</th>
+    <td class=""><%=Data_Eve_Reg_Date[0].event_start.substring(8,10)%></td>
+  </tr>
+
+    <tr>
+    <th class="">REGISTRATION START</th>
+    <td class=""><%=Data_Eve_Reg_Date[0].reg_start.substring(8,10)%></td>
+  </tr>
+
+    <tr>
+    <th class="">REGISTRATION END</th>
+    <td class=""><%=Data_Eve_Reg_Date[0].reg_due.substring(8,10)%></td>
+  </tr>
+
+  </table>
+
+
+</div>
+
+
+
+
+<!--Table END -->
 
 <!--FORM-->
 
 
 
-<div class=" RFpos container">
+<div class=" RFpos offset-md-1 fluid-container">
 
+<!--
     <div id=" accordion">
         <div class="card card-default">
             
+           
             <div id="RFstyle" class="card-header12">
                 <h4 style="padding-top: 15px; padding-left: 15px;color: white;" class="card-title">
-                        <b><%=Regis_Ename%></b>
+                        <b>=Regis_Ename%></b>
                     </a>
                 </h4>
             </div>
+            -->
 
-<p class="PPtext"><%=pptext%></p>
+
+<!--
+<p class="PPtext">=pptext%></p>
             
             
             <div id="collapse1" class="collapse show">
                 <div class="card-body">
+-->
 
 <!--action should be changed-->
-                <form action="<%=Regis_Eid%>" method="post">
+<!--
+                <<form action="Regis_Eid%>" method="post">
+-->
+
+<!--
                     <div  id="R1pos" class="row">
+
                         <div class="col-md-3 col-lg-4">
                             <div class="form-group1">
                                 <label class="control-label">First Name</label>
-                                <input type="text" class="form-control" name="fname" value="<%=fnamevalue%>" />
+                                <input type="text" class="form-control" name="fname" value="=fnamevalue%>" />
                             </div>
                         </div>
 
                         <div class="col-md-1 col-lg-4">
                             <div class="form-group1">
                                 <label class="control-label">Last Name</label>
-                                <input type="text" class="form-control" name="lname" value="<%=lnamevalue%>" />
+                                <input type="text" class="form-control" name="lname" value="=lnamevalue%>" />
                             </div>
                         </div>
                     
@@ -60,7 +129,7 @@
                     <div class="col-md-3 col-lg-2">
                             <div class="form-group1">
                                 <label class="control-label">Year</label>
-                                <input type="text" class="form-control" name="year" value="<%=yearvalue%>" />
+                                <input type="text" class="form-control" name="year" value="=yearvalue%>" />
                             </div>
                         </div>
                     </div>
@@ -70,38 +139,69 @@
                         <div class="col-md-4 col-lg-5">
                             <div class="form-group1">
                                 <label class="control-label">BMSCE mail-ID</label>
-                                <input type="email" class="form-control" name="mail" value="<%=mailvalue%>" />
+                                <input type="email" class="form-control" name="mail" value="=mailvalue%>" />
                             </div>
                         </div>
                         
                         <div class="col-md-2 col-lg-3">
                             <div class="form-group1">
                                 <label class="control-label">Branch</label>
-                                <input type="text" class="form-control" name="branch"  value="<%=branchvalue%>" />
+                                <input type="text" class="form-control" name="branch"  value="=branchvalue%>" />
                             </div>
                         </div>
     
                         <div class="col-md-3 col-lg-3">
                             <div class="form-group1">
                                 <label class="control-label">USN</label>
-                                <input type="text" class="form-control" name="usn" value="<%=usnvalue%>"  />
+                                <input type="text" class="form-control" name="usn" value="=usnvalue%>"  />
                             </div>
                         </div>
+
                     </div>
+
                </div>
             </div>
-            
+           --> 
+
     
-      <div id="RFstyle" class="FAstyle form-group1">
-        <p> ***** If participated in any events before attach those files*****</p>
+    <!--  <div id="RFstyle" class="FAstyle form-group1">
+        <p> ***** If participated in any of events before attach those files *****</p>
         <input type="file" class="form-control-file BTN" accept="image/*"> 
-       <button id="SBpos" type="submit" class="btn btn-primary" >Submit</button>
+
+      <button id="SBpos" type="submit" class="btn btn-primary" >Submit</button>
+
       </div>
     </form>
-            
+    -->
+
+
+            <div class= "RegbtnPos">
+
+            <form action = "<%=Reg_usn%>" method = "post"  enctype="multipart/form-data" >
+               <div id="RFstyle" class="FAstyle form-group1">
+
+                <p> ***** If participated in any of events before attach those files *****</p>
+                
+                <input type="file" name="mypic" class="form-control-file BTN" > 
+                <p class = "subtext">file uploaded must be in .pdf formate</p>
+
+
+                    <!-- <button id="SBpos" type="submit" class="btn btn-primary" >Submit</button>-->
+
+                              </div >
+
+                            <button  type="submit"  value="submit" class="button-3d-1">REGISTER!</button>
+                     </form>
+
+                  </div>
             
              </div>
+             
         </div>
+        
     </div>
+
+
+    
 
 <%- include("footer") -%>

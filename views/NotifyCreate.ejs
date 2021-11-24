@@ -19,8 +19,14 @@
 
 <!------ Include the above in your HEAD tag ---------->
 
+
 <div class="container contact offset-md-2">
+   <div class="NSuccessTxt">
+    <span><%=SuNotifyTxt%></span>
+    </div>
 	<div class="row">
+
+	
 		
 		<div class="col-md-9">
 		    
@@ -33,7 +39,7 @@
 				<div class="form-group" >
 				  <label class="control-label col-sm-2" for="EventId">Event ID:</label>
 				  <div class="col-sm-3"  >          
-					<input type="text" class="form-control"  placeholder="" name="EventId" value="">
+					<input type="text" class="form-control"  placeholder="" name="NEventId" value="">
 				  </div>
 				</div>
 				
@@ -41,13 +47,13 @@
 				<div class="form-group">
 				   <label class="control-label col-sm-4" for="EventDetails">Event Notification:</label> 
 				  <div class="col-sm-10">
-					<textarea class="form-control" name="EventNotify" value="" rows="2"></textarea>
+					<textarea class="form-control" name="NEventNotify" value="" rows="2"></textarea>
 				  </div>
 				</div>
 				
 				
 				
-				<p style="color:red;"><%=NErrtxt%></p>
+				<p class="NErrtxt"><%=NErrtxt%></p>
 				
 				<div class="form-group">        
 				  <div class="col-sm-offset-2 col-sm-10">
@@ -63,9 +69,7 @@
 
 	</div>
 
-     <div class="NSuccessTxt">
-    <span><%=SuNotifyTxt%></span>
-    </div>
+  
 
 </div>
 

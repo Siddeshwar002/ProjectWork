@@ -83,6 +83,13 @@
     margin-left: 100%;
 }
 
+.NErrtxt {
+        font-family: 'Montserrat',
+        sans-serif;
+        color:red;
+        margin-left: 15px;
+}
+
 .NSuccessTxt{
     margin-top: 20px;
     color: #000000;
@@ -90,4 +97,5 @@
     font-size: 25px;
     margin-left: 5px;
     font-weight: bold;
+    
 }

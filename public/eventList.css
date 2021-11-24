@@ -153,7 +153,7 @@
   border: 1px solid rgba(0, 0, 0, .15);
   border-radius: .25rem;
 }
-a#dropdown-item.dropdown-item{
+span#dropdown-item.dropdown-item{  /*span can be changed to <a> also */
   padding: 5px 10px 0px 10px;
   font-size: 13px;
   height: 40px;
@@ -295,8 +295,9 @@ a#dropdown-item.dropdown-item{
     margin-bottom: 240px;
 }
 
-.card-header1{
-    font-family: 'Nunito', sans-serif;
+.card-header1 {
+  font-family: 'Montserrat',
+    sans-serif;
     padding: .75rem 1.25rem 0rem 1.25rem;
     margin-bottom: 0;
     height: 85px;
@@ -320,6 +321,8 @@ letter-spacing: 0.02rem;
 }
 
 .Secline {
+       font-family: 'Montserrat',
+       sans-serif;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -335,11 +338,12 @@ letter-spacing: 0.02rem;
 /*****************DATE*********************************/
 
 .date {
-  font-family: 'PT Serif', serif;
+  font-family: 'Montserrat',
+    sans-serif;
   text-decoration: none;
   display: inline-block;
   position: absolute;
-  margin-left: 800px;
+  margin-left: 780px;
   color: #007bff;
 }
 
